@@ -1,0 +1,119 @@
+{
+  "tool": {
+    "bow": {
+      "speed": 0.4,
+      "range": 0.5,
+      "bonusDamage": 1.5
+    },
+    "fletching": {
+      "accuracy": 0.0,
+      "modifier": 0.0
+    },
+    "head": {
+      "attackDamage": 5.1,
+      "speed": 5.2,
+      "durability": 620,
+      "harvestLevel": 2
+    },
+    "handle": {
+      "modifier": 1.15,
+      "durability": -45
+    },
+    "arrowShaft": {
+      "modifier": 0.0,
+      "bonusAmmo": 0
+    },
+    "bowstring": {
+      "modifier": 1.0
+    },
+    "extra": {
+      "durability": 125
+    }
+  },
+  "color": "#1E336C",
+  "craftable": false,
+  "madeInToolForge": true,
+  "name": "syrmorite",
+  "createMeltingRecipes": true,
+  "meltingTemperature": 475,
+  "looks": {
+    "shininess": 0.25,
+    "brightness": 0.25,
+    "hueshift": -0.1
+  },
+  "fluid": {
+    "viscosity": 8000,
+    "density": 1500,
+    "temperature": 1000,
+    "luminosity": 8
+  },
+  "matParts": [
+    "HEAD",
+    "HANDLE",
+    "EXTRA",
+    "BOW",
+    "PROJECTILE",
+    "CORE",
+    "PLATES",
+    "TRIM"
+  ],
+  "nameLocales": {
+	"ru_ru": "Сирморит"
+  },
+  "smelting": {
+    "ingot": [
+      "thebetweenlands:items_misc:11"
+    ],
+    "block": [
+      "thebetweenlands:syrmorite_block"
+    ],
+    "nugget": [],
+    "ore": [
+      "thebetweenlands:syrmorite_ore"
+    ]
+  },
+  "armor": {
+    "core": {
+      "durability": 16.5,
+      "defense": 16.0
+    },
+    "plates": {
+      "modifier": 0.9,
+      "durability": 6.0,
+      "toughness": 5.0
+    },
+    "trim": {
+      "extraDurability": 8.5
+    }
+  },
+  "specificTraits": {
+    "HEAD": [
+      "gritty",
+      "corrosive"
+    ],
+    "HANDLE": [
+      "corrosive"
+    ],
+    "EXTRA": [
+      "corrosive"
+    ],
+    "BOW": [
+      "corrosive"
+    ],
+    "PROJECTILE": [
+      "corrosive"
+    ],
+    "CORE": [
+      "corrosive_armor",
+      "splash_armor"
+    ],
+    "PLATES": [
+      "corrosive_armor",
+      "splash_armor"
+    ],
+    "TRIM": [
+      "corrosive_armor",
+      "splash_armor"
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "tool": {
+    "bow": {
+      "speed": 0.4,
+      "range": 1.75,
+      "bonusDamage": 6.5
+    },
+    "fletching": {
+      "accuracy": 0.0,
+      "modifier": 0.0
+    },
+    "head": {
+      "attackDamage": 4.0,
+      "speed": 6.5,
+      "durability": 300,
+      "harvestLevel": 1
+    },
+    "handle": {
+      "modifier": 0.9,
+      "durability": 65
+    },
+    "arrowShaft": {
+      "modifier": 1.1,
+      "bonusAmmo": 5
+    },
+    "bowstring": {
+      "modifier": 0.05
+    },
+    "extra": {
+      "durability": 35
+    }
+  },
+  "color": "#6F43E8",
+  "craftable": false,
+  "madeInToolForge": true,
+  "name": "thaumium",
+  "createMeltingRecipes": true,
+  "meltingTemperature": 475,
+  "looks": {
+    "shininess": 0.25,
+    "brightness": 0.25,
+    "hueshift": -0.1
+  },
+  "fluid": {
+    "viscosity": 8000,
+    "density": 1500,
+    "temperature": 1000,
+    "luminosity": 8
+  },
+  "matParts": [
+    "HEAD",
+    "HANDLE",
+    "EXTRA",
+    "BOW",
+    "PROJECTILE",
+    "CORE",
+    "PLATES",
+    "TRIM"
+  ],
+  "nameLocales": {
+	"ru_ru": "Таумиум"
+  },
+  "smelting": {
+    "ingot": [
+      "thaumcraft:ingot:0"
+    ],
+    "block": [],
+    "nugget": [],
+    "ore": []
+  },
+  "armor": {
+    "core": {
+      "durability": 12.0,
+      "defense": 14.0
+    },
+    "plates": {
+      "modifier": 0.9,
+      "durability": 6.0,
+      "toughness": 0.0
+    },
+    "trim": {
+      "extraDurability": 3.5
+    }
+  },
+  "specificTraits": {
+    "HEAD": [
+      "essentia",
+      "aural"
+    ],
+    "HANDLE": [
+      "aural"
+    ],
+    "EXTRA": [
+      "aural"
+    ],
+    "BOW": [
+      "aural"
+    ],
+    "PROJECTILE": [
+      "aural"
+    ],
+    "CORE": [
+      "visbarrier_armor"
+    ],
+    "PLATES": [
+      "visbarrier_armor"
+    ],
+    "TRIM": [
+      "visbarrier_armor"
+    ]
+  }
+}

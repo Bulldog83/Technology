@@ -1,0 +1,124 @@
+{
+  "tool": {
+    "bow": {
+      "speed": 1.0526316,
+      "range": 0.9,
+      "bonusDamage": -0.5
+    },
+    "fletching": {
+      "accuracy": 0.0,
+      "modifier": 0.0
+    },
+    "head": {
+      "attackDamage": 2.2,
+      "speed": 2.4,
+      "durability": 75,
+      "harvestLevel": 0
+    },
+    "handle": {
+      "modifier": 1.1,
+      "durability": 40
+    },
+    "arrowShaft": {
+      "modifier": 0.0,
+      "bonusAmmo": 0
+    },
+    "bowstring": {
+      "modifier": 1.0
+    },
+    "extra": {
+      "durability": 25
+    }
+  },
+  "color": "#665E31",
+  "craftable": true,
+  "madeInToolForge": false,
+  "name": "weedwood",
+  "createMeltingRecipes": true,
+  "meltingTemperature": 475,
+  "looks": {
+    "shininess": 0.15,
+    "brightness": 0.25,
+    "hueshift": -0.1
+  },
+  "fluid": {
+    "viscosity": 8000,
+    "density": 1500,
+    "temperature": 1000,
+    "luminosity": 8
+  },
+  "matParts": [
+    "HEAD",
+    "HANDLE",
+    "EXTRA",
+    "BOW",
+    "PROJECTILE",
+    "CORE",
+    "PLATES",
+    "TRIM",
+    "SHAFT"
+  ],
+  "nameLocales": {
+	"ru_ru": "Сорное дерево"
+  },
+  "smelting": {
+    "ingot": [
+      "thebetweenlands:weedwood_planks"
+    ],
+    "block": [],
+    "nugget": [],
+    "ore": []
+  },
+  "armor": {
+    "core": {
+      "durability": 3.0,
+      "defense": 3.5
+    },
+    "plates": {
+      "modifier": 1.05,
+      "durability": 1.25,
+      "toughness": 0.0
+    },
+    "trim": {
+      "extraDurability": 0.5
+    }
+  },
+  "specificTraits": {
+    "HEAD": [
+      "ecological",
+      "corrosive"
+    ],
+    "HANDLE": [
+      "ecological",
+      "corrosive"
+    ],
+    "EXTRA": [
+      "ecological",
+      "corrosive"
+    ],
+    "BOW": [
+      "ecological",
+      "corrosive"
+    ],
+    "SHAFT": [
+      "ecological",
+      "corrosive"
+    ],
+    "PROJECTILE": [
+      "ecological",
+      "corrosive"
+    ],
+    "CORE": [
+      "ecological_armor",
+      "corrosive_armor"
+    ],
+    "PLATES": [
+      "ecological_armor",
+      "corrosive_armor"
+    ],
+    "TRIM": [
+      "ecological_armor",
+      "corrosive_armor"
+    ]
+  }
+}

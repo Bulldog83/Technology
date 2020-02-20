@@ -1,0 +1,46 @@
+{
+	"dependencies": "biomesoplenty",
+	"populate": {
+		"sapphire": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "biomesoplenty:gem_ore",
+					"metadata": 6
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 2,
+			"min-height": 4,
+			"max-height": 32,
+			"retrogen": "true",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"minecraft:mushroom_island",
+							"minecraft:ocean",
+							"biomesoplenty:coral_reef",
+							"biomesoplenty:kelp_forest",
+							"biomesoplenty:mangrove",
+							"biomesoplenty:glacier",
+							"biomesoplenty:sacred_springs",
+							"biomesoplenty:tropical_island",
+							"biomesoplenty:volcanic_island"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+	}
+}

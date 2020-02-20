@@ -1,0 +1,454 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "biomesoplenty:gem_ore:6"
+          ] 
+        }
+      },
+      "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+      "drops": [
+        {
+          "selector": {
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+            "items": [
+              "iceandfire:sapphire_gem"
+            ],
+            "quantity": {
+              "min": 1,
+              "max": 2
+            }
+          }
+        },
+		{
+		  "selector": {
+			"weight": {
+			  "value": 25
+			},
+			"fortuneLevelRequired": 1,
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+			  "iceandfire:sapphire_gem"
+			],
+			"quantity": {
+			  "min": 1,
+			  "max": 3
+			}
+		  }
+		},
+		{
+		  "selector": {
+			"weight": {
+			  "value": 75
+			},
+			"fortuneLevelRequired": 2,
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+			  "iceandfire:sapphire_gem"
+			],
+			"quantity": {
+			  "min": 2,
+			  "max": 3
+			}
+		  }
+		},
+		{
+		  "selector": {
+			"weight": {
+			  "value": 125
+			},
+			"fortuneLevelRequired": 3,
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+				"iceandfire:sapphire_gem"
+			],
+			"quantity": {
+				"min": 2,
+				"max": 4
+			}
+		  }
+		}
+      ]
+    },
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "biomesoplenty:gem_ore:1"
+          ] 
+        }
+      },
+      "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+      "drops": [
+        {
+          "selector": {
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+            "items": [
+              "techreborn:gem"
+            ],
+            "quantity": {
+              "min": 1,
+              "max": 2
+            }
+          }
+        },
+		{
+		  "selector": {
+			"weight": {
+			  "value": 25
+			},
+			"fortuneLevelRequired": 1,
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+			  "techreborn:gem"
+			],
+			"quantity": {
+			  "min": 1,
+			  "max": 3
+			}
+		  }
+		},
+		{
+		  "selector": {
+			"weight": {
+			  "value": 75
+			},
+			"fortuneLevelRequired": 2,
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+			  "techreborn:gem"
+			],
+			"quantity": {
+			  "min": 2,
+			  "max": 3
+			}
+		  }
+		},
+		{
+		  "selector": {
+			"weight": {
+			  "value": 125
+			},
+			"fortuneLevelRequired": 3,
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+				"techreborn:gem"
+			],
+			"quantity": {
+				"min": 2,
+				"max": 4
+			}
+		  }
+		}
+      ]
+    },
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "biomesoplenty:gem_ore:2"
+          ] 
+        }
+      },
+      "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+      "drops": [
+        {
+          "selector": {
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+            "items": [
+              "techreborn:gem:2"
+            ],
+            "quantity": {
+              "min": 1,
+              "max": 2
+            }
+          }
+        },
+		{
+		  "selector": {
+			"weight": {
+			  "value": 25
+			},
+			"fortuneLevelRequired": 1,
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+			  "techreborn:gem:2"
+			],
+			"quantity": {
+			  "min": 1,
+			  "max": 3
+			}
+		  }
+		},
+		{
+		  "selector": {
+			"weight": {
+			  "value": 75
+			},
+			"fortuneLevelRequired": 2,
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+			  "techreborn:gem:2"
+			],
+			"quantity": {
+			  "min": 2,
+			  "max": 3
+			}
+		  }
+		},
+		{
+		  "selector": {
+			"weight": {
+			  "value": 125
+			},
+			"fortuneLevelRequired": 3,
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+				"techreborn:gem:2"
+			],
+			"quantity": {
+				"min": 2,
+				"max": 4
+			}
+		  }
+		}
+      ]
+    },
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "minecraft:stone"
+          ] 
+        }
+      },
+      "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+      "drops": [
+        {
+          "selector": {
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+            "items": [
+              "primal:rock_stone"
+            ],
+            "quantity": {
+              "min": 2,
+              "max": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "minecraft:stone:1"
+          ] 
+        }
+      },
+      "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+      "drops": [
+        {
+          "selector": {
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+            "items": [
+              "primal:rock_granite"
+            ],
+            "quantity": {
+              "min": 2,
+              "max": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "minecraft:stone:3"
+          ] 
+        }
+      },
+      "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+      "drops": [
+        {
+          "selector": {
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+            "items": [
+              "primal:rock_diorite"
+            ],
+            "quantity": {
+              "min": 2,
+              "max": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "minecraft:stone:5"
+          ] 
+        }
+      },
+      "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+      "drops": [
+        {
+          "selector": {
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+            "items": [
+              "primal:rock_andesite"
+            ],
+            "quantity": {
+              "min": 2,
+              "max": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "minecraft:netherrack"
+          ] 
+        }
+      },
+      "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+      "drops": [
+        {
+          "selector": {
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+            "items": [
+              "primal:rock_netherrack"
+            ],
+            "quantity": {
+              "min": 2,
+              "max": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "enderore:ore_ender"
+          ] 
+        }
+      },
+      "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+      "drops": [
+		{
+		  "selector": {
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+			  "terraqueous:item_main:200"
+			],
+			"quantity": {
+			  "min": 4,
+			  "max": 6
+			}
+		  }
+		},
+		{
+		  "selector": {
+			"weight": {
+			  "value": 25
+			},
+			"fortuneLevelRequired": 1,
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+			  "terraqueous:item_main:200"
+			],
+			"quantity": {
+			  "min": 5,
+			  "max": 8
+			}
+		  }
+		},
+		{
+		  "selector": {
+			"weight": {
+			  "value": 75
+			},
+			"fortuneLevelRequired": 2,
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+			  "terraqueous:item_main:200"
+			],
+			"quantity": {
+			  "min": 6,
+			  "max": 10
+			}
+		  }
+		},
+		{
+		  "selector": {
+			"weight": {
+			  "value": 125
+			},
+			"fortuneLevelRequired": 3,
+			"silktouch": "EXCLUDED"
+		  },
+		  "item": {
+			"items": [
+				"terraqueous:item_main:200"
+			],
+			"quantity": {
+				"min": 8,
+				"max": 12
+			}
+		  }
+		}
+      ]
+    }
+  ]
+}

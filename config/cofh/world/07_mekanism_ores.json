@@ -1,0 +1,174 @@
+{
+	"dependencies": "mekanism",
+	"populate": {
+		"tin": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "mekanism:oreblock",
+					"properties": {
+						"type": "tin"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 6
+			},
+			"cluster-count": 5,
+			"min-height": 18,
+			"max-height": 55,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"tin_high": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "mekanism:oreblock",
+					"properties": {
+						"type": "tin"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 4
+			},
+			"cluster-count": 3,
+			"min-height": 55,
+			"max-height": 96,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"tin_mountain": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "mekanism:oreblock",
+					"properties": {
+						"type": "tin"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 4
+			},
+			"cluster-count": 4,
+			"min-height": 55,
+			"max-height": 196,
+			"retrogen": "true",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"extreme_hills",
+							"smaller_extreme_hills",
+							"extreme_hills_with_trees",
+							"mutated_extreme_hills",
+							"mutated_extreme_hills_with_trees",
+							"biomesoplenty:alps",
+							"biomesoplenty:alps_foothills",
+							"biomesoplenty:crag",
+							"biomesoplenty:highland",
+							"biomesoplenty:mountain",
+							"biomesoplenty:mountain_foothills",
+							"biomesoplenty:overgrown_cliffs",
+							"abyssalcraft:darklands_mountains"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"osmium": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "mekanism:oreblock",
+					"properties": {
+						"type": "osmium"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 6
+			},
+			"cluster-count": 6,
+			"min-height": 22,
+			"max-height": 64,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"osmium_mountain": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "mekanism:oreblock",
+					"properties": {
+						"type": "osmium"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 4
+			},
+			"cluster-count": 4,
+			"min-height": 64,
+			"max-height": 196,
+			"retrogen": "true",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"extreme_hills",
+							"smaller_extreme_hills",
+							"extreme_hills_with_trees",
+							"mutated_extreme_hills",
+							"mutated_extreme_hills_with_trees",
+							"biomesoplenty:alps",
+							"biomesoplenty:alps_foothills",
+							"biomesoplenty:crag",
+							"biomesoplenty:highland",
+							"biomesoplenty:mountain",
+							"biomesoplenty:mountain_foothills",
+							"biomesoplenty:overgrown_cliffs",
+							"abyssalcraft:darklands_mountains"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}		
+	}
+}

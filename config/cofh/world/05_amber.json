@@ -1,0 +1,59 @@
+{
+	"dependencies": "thaumcraft",
+	"populate": {
+		"amber": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "thaumcraft:ore_amber",
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 6,
+			"min-height": 4,
+			"max-height": 32,
+			"retrogen": "true",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"minecraft:birch_forest",
+							"minecraft:birch_forest_hills",
+							"minecraft:forest",
+							"minecraft:forest_hills",
+							"minecraft:roofed_forest",
+							"minecraft:redwood_taiga",
+							"minecraft:redwood_taiga_hills",
+							"minecraft:taiga",
+							"minecraft:taiga_cold",
+							"minecraft:taiga_cold_hills",
+							"minecraft:taiga_hills",
+							"biomesoplenty:boreal_fores",
+							"biomesoplenty:coniferous_forest",
+							"biomesoplenty:grove",
+							"biomesoplenty:maple_woods",
+							"biomesoplenty:rainforest",
+							"biomesoplenty:redwood_forest",
+							"biomesoplenty:seasonal_forest",
+							"biomesoplenty:shield",
+							"biomesoplenty:snowy_coniferous_forest",
+							"biomesoplenty:snowy_forest",
+							"biomesoplenty:temperate_rainforest",
+							"biomesoplenty:tropical_rainforest",
+							"abyssalcraft:darklands_forest",
+							"thaumcraft:magical_forest"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+	}
+}

@@ -1,0 +1,22 @@
+[
+	{
+		"mob": "animalium:bear",
+		"item": "camping:parts_animal@1",
+		"itemcount": "1-2/1-3/2-3"
+	},
+	{
+		"mob": "primal:bear_black",
+		"item": "camping:parts_animal@1",
+		"itemcount": "1-2/1-3/2-3"
+	},
+	{
+		"mob": "minecraft:polar_bear",
+		"item": "camping:parts_animal@0",
+		"itemcount": "1-2/1-3/2-3"
+	},
+	{
+		"mob": "mowziesmobs:frostmaw",
+		"item": "camping:parts_animal@0",
+		"itemcount": "3-4/4-6/5-7"
+	}
+]

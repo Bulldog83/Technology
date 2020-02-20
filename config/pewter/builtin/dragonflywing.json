@@ -1,0 +1,63 @@
+{
+  "tool": {
+    "bow": {
+      "speed": 0.0,
+      "range": 0.0,
+      "bonusDamage": 0.0
+    },
+    "fletching": {
+      "accuracy": 0.85,
+      "modifier": 1.1
+    },
+    "head": {
+      "attackDamage": 0.0,
+      "speed": 0.0,
+      "durability": 0,
+      "harvestLevel": 0
+    },
+    "handle": {
+      "modifier": 1.0,
+      "durability": 0
+    },
+    "arrowShaft": {
+      "modifier": 0.0,
+      "bonusAmmo": 0
+    },
+    "bowstring": {
+      "modifier": 1.0
+    },
+    "extra": {
+      "durability": 0
+    }
+  },
+  "color": "#6BBEBF",
+  "craftable": true,
+  "madeInToolForge": false,
+  "name": "dragonflywing",
+  "createMeltingRecipes": true,
+  "meltingTemperature": 475,
+  "looks": {
+    "shininess": 0.25,
+    "brightness": 0.25,
+    "hueshift": -0.1
+  },
+  "fluid": {
+    "viscosity": 8000,
+    "density": 1500,
+    "temperature": 1000,
+    "luminosity": 8
+  },
+  "matParts": [
+    "FLETCHING"
+  ],
+  "nameLocales": {},
+  "smelting": {
+    "ingot": [
+      "thebetweenlands:items_misc:3"
+    ],
+    "block": [],
+    "nugget": [],
+    "ore": []
+  },
+  "specificTraits": {}
+}

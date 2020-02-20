@@ -1,0 +1,119 @@
+{
+  "tool": {
+    "bow": {
+      "speed": 0.8,
+      "range": 2.25,
+      "bonusDamage": 9.5
+    },
+    "fletching": {
+      "accuracy": 0.0,
+      "modifier": 0.0
+    },
+    "head": {
+      "attackDamage": 12,
+      "speed": 13.5,
+      "durability": 1100,
+      "harvestLevel": 5
+    },
+    "handle": {
+      "modifier": 1.2,
+      "durability": 650
+    },
+    "arrowShaft": {
+      "modifier": 1.8,
+      "bonusAmmo": 45
+    },
+    "bowstring": {
+      "modifier": 0.05
+    },
+    "extra": {
+      "durability": 750
+    }
+  },
+  "color": "#3BA3D0",
+  "craftable": false,
+  "madeInToolForge": true,
+  "name": "mithril",
+  "createMeltingRecipes": false,
+  "meltingTemperature": 1975,
+  "looks": {
+    "shininess": 0.35,
+    "brightness": 0.25,
+    "hueshift": -0.1
+  },
+  "fluid": {
+    "viscosity": 8500,
+    "density": 1500,
+    "temperature": 3600,
+    "luminosity": 11
+  },
+  "matParts": [
+    "HEAD",
+    "HANDLE",
+    "EXTRA",
+    "BOW",
+    "PROJECTILE",
+    "CORE",
+    "PLATES",
+    "TRIM"
+  ],
+  "nameLocales": {
+	"ru_ru": "Мифрил"
+  },
+  "smelting": {
+    "ingot": [
+		"thermalfoundation:material:72"
+	],
+    "block": [
+		"thermalfoundation:storage:8"
+	],
+    "nugget": [
+		"thermalfoundation:material:200"
+	],
+    "ore": [
+		"thermalfoundation:ore:8"
+	]
+  },
+  "armor": {
+    "core": {
+      "durability": 35.0,
+      "defense": 60.0
+    },
+    "plates": {
+      "modifier": 1.2,
+      "durability": 32.0,
+      "toughness": 20.0
+    },
+    "trim": {
+      "extraDurability": 135
+    }
+  },
+  "specificTraits": {
+    "HEAD": [
+      "momentum",
+      "dense"
+    ],
+    "HANDLE": [
+      "lightweight"
+    ],
+    "EXTRA": [
+      "lightweight"
+    ],
+    "BOW": [
+      "lightweight"
+    ],
+    "PROJECTILE": [
+      "momentum"
+    ],
+    "CORE": [
+      "featherweight_armor",
+	  "dense_armor"
+    ],
+    "PLATES": [
+      "lightweight_armor"
+    ],
+    "TRIM": [
+      "lightweight_armor"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+[
+	{
+		"mob": ["mowziesmobs:barakoan_barakoana", "mowziesmobs:barakoana"],
+		"biome": ["Oasis","Brushland","Outback","Prairie"],
+		"result": "allow"
+	},
+	{
+		"mob": "animalium:bear",
+		"biometype": ["FOREST"],
+		"result": "allow"
+	},
+	{
+		"mob": "animalium:bear",
+		"biometype": ["DESERT","COLD","JUNGLE","WASTELAND","PLAINS","SWAMP"],
+		"result": "deny"
+	},
+	{
+		"mob": "thermalfoundation:blitz",
+		"biome": ["Wasteland","Steppe","Tundra","Grassland","Lush Desert","Outback","Prairie"],
+		"maxlight": 7,
+		"result": "allow"
+	},
+	{
+		"mob": "thermalfoundation:blizz",
+		"biome": ["Alps","AlpsFoothills","Snowy Coniferous Forest","Cold Desert","Snowy Forest","Glacier"],
+		"maxlight": 7,
+		"result": "allow"
+	},
+	{
+		"mob": "thermalfoundation:basalz",
+		"biome": ["Wasteland","Alps","Crag","Mountain","Overgrown Cliffs","Shield","Highland"],
+		"maxlight": 7,
+		"result": "allow"
+	},
+	{
+		"mob": "thermalfoundation:basalz",
+		"biome": ["Chaparral"],
+		"block": "minecraft:stone",
+		"maxlight": 7,
+		"result": "allow"
+	}
+]

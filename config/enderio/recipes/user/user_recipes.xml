@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+	<alias name="POWDER_ENDER" item="oredict:dustEnder" />
+	
+	<recipe name="Gear, Wood" disabled="true" />
+	<recipe name="Gear, ae2 messes things up" disabled="true" />
+	<recipe name="Gear, just to be sure" disabled="true" />
+	<recipe name="Gear, better save than sorry" disabled="true" />
+	<recipe name="Gear, Stone" disabled="true" />
+	<recipe name="Gear, Stone, Upgrade" disabled="true" />
+	<recipe name="Gear Reverse Casting, 1" disabled="true" />
+	<recipe name="Tweak: Stick from Wood" disabled="true" />
+	<recipe name="Tweak: Chest from Wood" disabled="true" />
+	<recipe name="Tweak: Wood Hopper" disabled="true" />
+	<recipe name="Compatibility: End Crystal" disabled="true" />
+	<recipe name="Compatibility: Beacon" disabled="true" />
+	<recipe name="Compatibility: Glass Pane" disabled="true" />
+	<recipe name="Compatibility: Daylight Sensor" disabled="true" />
+	<recipe name="Ender Defragmentation" disabled="true" />
+	<recipe name="Sagmill: Ender Dust" disabled="true" />
+	<recipe name="Ender Dust" disabled="true" />
+	
+	<recipe name="Ender Pearl Nuggets" disabled="true">
+		<crafting>
+			<shapeless>
+				<item name="POWDER_ENDER"/><item name="POWDER_ENDER"/><item name="POWDER_ENDER"/>
+				<item name="POWDER_ENDER"/><item name="POWDER_ENDER"/><item name="POWDER_ENDER"/>
+				<item name="POWDER_ENDER"/><item name="POWDER_ENDER"/><item name="POWDER_ENDER"/>
+			</shapeless>
+		  <output name="oredict:enderpearl"/>
+		</crafting>
+	</recipe>
+	
+	<recipe name="Enderios" disabled="true">
+		<crafting>
+			<shapeless>
+				<item name="minecraft:bowl"/><item name="minecraft:milk_bucket"/><item name="cropWheat"/><item name="POWDER_ENDER"/>
+			</shapeless>
+			<output name="enderio:item_ender_food:0"/>
+		</crafting>
+	</recipe>
+	
+	<recipe name="Sagmill: Ender Pearl" required="true">
+		<sagmilling energy="1600" bonus="none">
+			<input name="oredict:enderpearl"/>
+			<output name="POWDER_ENDER" amount="1"  />
+		</sagmilling>
+	</recipe>
+</enderio:recipes>

@@ -1,0 +1,115 @@
+{
+  "tool": {
+    "bow": {
+      "speed": 0.5,
+      "range": 0.7,
+      "bonusDamage": -1.5
+    },
+    "fletching": {
+      "accuracy": 0.0,
+      "modifier": 0.0
+    },
+    "head": {
+      "attackDamage": 4.2,
+      "speed": 5.5,
+      "durability": 270,
+      "harvestLevel": 1
+    },
+    "handle": {
+      "modifier": 0.75,
+      "durability": 55
+    },
+    "arrowShaft": {
+      "modifier": 0.0,
+      "bonusAmmo": 0
+    },
+    "bowstring": {
+      "modifier": 1.0
+    },
+    "extra": {
+      "durability": 95
+    }
+  },
+  "color": "#F38A20",
+  "craftable": false,
+  "madeInToolForge": true,
+  "name": "octine",
+  "createMeltingRecipes": true,
+  "meltingTemperature": 475,
+  "looks": {
+    "shininess": 0.5,
+    "brightness": 0.25,
+    "hueshift": -0.1
+  },
+  "fluid": {
+    "viscosity": 8000,
+    "density": 1500,
+    "temperature": 1000,
+    "luminosity": 8
+  },
+  "matParts": [
+    "HEAD",
+    "HANDLE",
+    "EXTRA",
+    "BOW",
+    "PROJECTILE",
+    "CORE",
+    "PLATES",
+    "TRIM"
+  ],
+  "nameLocales": {
+    "en_7S ": "Ye Illuminating Treasure",
+    "ru_ru": "Октин"
+  },
+  "smelting": {
+    "ingot": [
+      "thebetweenlands:octine_ingot"
+    ],
+    "block": [],
+    "nugget": [],
+    "ore": [
+      "thebetweenlands:octine_ore"
+    ]
+  },
+  "armor": {
+    "core": {
+      "durability": 13.0,
+      "defense": 14.0
+    },
+    "plates": {
+      "modifier": 0.7,
+      "durability": 5.5,
+      "toughness": 0.0
+    },
+    "trim": {
+      "extraDurability": 4.0
+    }
+  },
+  "specificTraits": {
+    "HEAD": [
+      "sparking",
+      "corrosive"
+    ],
+    "HANDLE": [
+      "corrosive"
+    ],
+    "EXTRA": [
+      "corrosive"
+    ],
+    "BOW": [
+      "corrosive"
+    ],
+    "PROJECTILE": [
+      "corrosive"
+    ],
+    "CORE": [
+      "corrosive_armor"
+    ],
+    "PLATES": [
+      "corrosive_armor"
+    ],
+    "TRIM": [
+      "corrosive_armor"
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "tool": {
+    "bow": {
+      "speed": 0.0,
+      "range": 0.0,
+      "bonusDamage": 0.0
+    },
+    "fletching": {
+      "accuracy": 0.0,
+      "modifier": 0.0
+    },
+    "head": {
+      "attackDamage": 0.0,
+      "speed": 0.0,
+      "durability": 0,
+      "harvestLevel": 0
+    },
+    "handle": {
+      "modifier": 1.0,
+      "durability": 0
+    },
+    "arrowShaft": {
+      "modifier": 0.0,
+      "bonusAmmo": 0
+    },
+    "bowstring": {
+      "modifier": 0.85
+    },
+    "extra": {
+      "durability": 0
+    }
+  },
+  "color": "#6BBEBF",
+  "craftable": true,
+  "madeInToolForge": false,
+  "name": "manastring",
+  "createMeltingRecipes": true,
+  "meltingTemperature": 475,
+  "looks": {
+    "shininess": 0.25,
+    "brightness": 0.25,
+    "hueshift": -0.1
+  },
+  "fluid": {
+    "viscosity": 8000,
+    "density": 1500,
+    "temperature": 1000,
+    "luminosity": 8
+  },
+  "matParts": [
+    "BOWSTRING"
+  ],
+  "nameLocales": {
+    "ru_ru": "Нить маны"
+  },
+  "smelting": {
+    "ingot": [
+      "botania:manaresource:16"
+    ],
+    "block": [],
+    "nugget": [],
+    "ore": []
+  },
+  "specificTraits": {
+    "BOWSTRING": [
+      "manainfused"
+    ]
+  }
+}
