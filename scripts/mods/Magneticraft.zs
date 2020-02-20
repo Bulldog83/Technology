@@ -236,5 +236,3 @@ val hammersToAdd as int[string][IItemStack] = {
 for hammer, stats in hammersToAdd {
 	mods.magneticraft.CrushingTable.addHammer(hammer, stats.level, stats.speed, 1);
 }
-
-Disabling.removeRecipes();

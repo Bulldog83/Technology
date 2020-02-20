@@ -1,1 +1,168 @@
-[]
+[
+	{
+		"remove": [
+			"iceandfire:if_troll",
+			"thermalfoundation:basalz",
+			"thermalfoundation:blitz",
+			"thermalfoundation:blizz",
+			"matteroverdrive:rogue_android",
+			"matteroverdrive:ranged_rogue_android"
+		]
+	},
+	{
+		"maxcount": "2,iceandfire:if_troll",
+		"mobs": [
+			{
+				"mob": "iceandfire:if_troll",
+				"weight": 2,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			}
+		]
+	},
+	{
+		"biometype": ["MOUNTAIN"],
+		"maxcount": "3,thermalfoundation:basalz",
+		"maxcount": "2,thermalfoundation:blizz",
+		"mobs": [
+			{
+				"mob": "thermalfoundation:basalz",
+				"weight": 3,
+				"groupcountmin": 1,
+				"groupcountmax": 2
+			},
+			{
+				"mob": "thermalfoundation:blizz",
+				"weight": 2,
+				"groupcountmin": 1,
+				"groupcountmax": 2
+			}
+		]
+	},
+	{
+		"biome": ["Chaparral"],
+		"maxcount": "3,thermalfoundation:basalz",
+		"mobs": [
+			{
+				"mob": "thermalfoundation:basalz",
+				"weight": 3,
+				"groupcountmin": 1,
+				"groupcountmax": 2
+			}
+		]
+	},
+	{
+		"biome": ["Shield"],
+		"maxcount": "3,thermalfoundation:basalz",
+		"mobs": [
+			{
+				"mob": "thermalfoundation:basalz",
+				"weight": 3,
+				"groupcountmin": 1,
+				"groupcountmax": 2
+			}
+		]
+	},
+	{
+		"biometype": ["DESERT"],
+		"maxcount": "3,thermalfoundation:blitz",
+		"mobs": [
+			{
+				"mob": "thermalfoundation:blitz",
+				"weight": 3,
+				"groupcountmin": 1,
+				"groupcountmax": 2
+			}
+		]
+	},
+	{
+		"biometype": ["WASTELAND"],
+		"maxcount": "3,thermalfoundation:blitz",
+		"mobs": [
+			{
+				"mob": "thermalfoundation:blitz",
+				"weight": 3,
+				"groupcountmin": 1,
+				"groupcountmax": 2
+			}
+		]
+	},
+	{
+		"biometype": ["PLAINS"],
+		"maxcount": "3,thermalfoundation:blitz",
+		"mobs": [
+			{
+				"mob": "thermalfoundation:blitz",
+				"weight": 3,
+				"groupcountmin": 1,
+				"groupcountmax": 2
+			}
+		]
+	},
+	{
+		"biometype": ["MESA"],
+		"maxcount": "3,thermalfoundation:blitz",
+		"mobs": [
+			{
+				"mob": "thermalfoundation:blitz",
+				"weight": 3,
+				"groupcountmin": 1,
+				"groupcountmax": 2
+			}
+		]
+	},
+	{
+		"biometype": ["SAVANNA"],
+		"maxcount": "3,thermalfoundation:blitz",
+		"mobs": [
+			{
+				"mob": "thermalfoundation:blitz",
+				"weight": 3,
+				"groupcountmin": 1,
+				"groupcountmax": 2
+			}
+		]
+	},
+	{
+		"biometype": ["COLD"],
+		"maxcount": "3,thermalfoundation:blizz",
+		"mobs": [
+			{
+				"mob": "thermalfoundation:blizz",
+				"weight": 2,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			}
+		]
+	},
+	{
+		"biometype": ["SNOWY"],
+		"maxcount": "5,thermalfoundation:blizz",
+		"mobs": [
+			{
+				"mob": "thermalfoundation:blizz",
+				"weight": 3,
+				"groupcountmin": 1,
+				"groupcountmax": 2
+			}
+		]
+	},
+	{
+		"maxcount": "2,matteroverdrive:rogue_android",
+		"maxcount": "1,matteroverdrive:ranged_rogue_android",
+		"mobs": [
+			{
+				"mob": "matteroverdrive:rogue_android",
+				"weight": 2,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			},
+			{
+				"mob": "matteroverdrive:ranged_rogue_android",
+				"weight": 2,
+				"groupcountmin": 1,
+				"groupcountmax": 1
+			}
+		]
+	}
+]

@@ -112,7 +112,7 @@ for slab, items in thinSlabItems {
 			.create();
 	}
 }
-
+/*
 val chageWoodRecipes as IOreDictEntry[] = [
 	<ore:dryingrack>,
 	<ore:shelfWood>,
@@ -126,7 +126,7 @@ for oreEntry in chageWoodRecipes {
 		builderCarpenter.convertRecipe(item, art_tools.framing_hammer, 3);
 	}
 }
-
+*/
 val woods as string[] = [
 	"oak",
 	"spruce",
@@ -255,7 +255,7 @@ val drainSlabs as IItemStack[IItemStack][IOreDictEntry] = {
 for stone, drain in drainStones {
 	Disabling.markForRemove(drain);
 	basicBuilder
-		.setShaped([[<ore:slatIron> * 2],[stone]])
+		.setShaped([[<ore:slatIron>],[stone],[<ore:slatIron>]])
 		.addOutput(drain * 2)
 		.addTool(art_tools.handsaw, 3)
 		.create();
@@ -389,7 +389,7 @@ for bucket, clay in clayBuckets {
 		[null,clay,null]
 	]);
 }
-
+/*
 val armorRecipes as int[string] = {
 	"primal:armor_wolf_head" : 5,
 	"primal:armor_wolf_body" : 8,
@@ -403,7 +403,7 @@ val armorRecipes as int[string] = {
 for recipe, dmg in armorRecipes {
 	builderTanner.convertRecipe(recipe, art_tools.needle, dmg);
 }
-
+*/
 val IE_CRUSHER_ENERGY as int = 3200;
 val TE_PULVERIZER_ENERGY as int = 2000;
 val HP_GRINDSTONE_TIME as int = 12;
@@ -566,5 +566,3 @@ for sand in <ore:sand>.items {
 	mods.thermalexpansion.InductionSmelter.addRecipe(metalItems.crude_iron.nugget * 8, sand, bog_iron * 2, 2000, metalItems.iron.nugget * 2, 100);
 	mods.immersiveengineering.ArcFurnace.addRecipe(metalItems.crude_iron.nugget * 8, bog_iron * 2, slag, 100, 512, [sand]);
 }
-
-Disabling.removeRecipes();

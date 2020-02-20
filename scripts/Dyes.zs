@@ -589,5 +589,3 @@ recipes.addShapeless(strToName(itemDyes["magenta_pink"].displayName), itemDyes["
 recipes.addShapeless(strToName(itemDyes["dark_magenta"].displayName), itemDyes["dark_magenta"] * 2, [oreDyes["magenta"].dye, oreDyes["black"].dye]);
 recipes.addShapeless(strToName(itemDyes["dark_pink"].displayName), itemDyes["dark_pink"] * 2, [oreDyes["pink"].dye, oreDyes["black"].dye]);
 recipes.addShapeless(strToName(itemDyes["medium_pink"].displayName), itemDyes["medium_pink"] * 3, [oreDyes["pink"].dye, oreDyes["pink"].dye, oreDyes["black"].dye]);
-
-Disabling.removeRecipes();

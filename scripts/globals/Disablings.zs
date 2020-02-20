@@ -8,7 +8,7 @@ import mods.ltt.LootTable;
 
 function itemsRemove(array as IItemStack[]) {
 	for item in array {
-		Disabling.markForRemoveInJEI(item, true);
+		Disabling.markForRemove(item, true);
 		LootTable.removeGlobalItem(item.definition.id);
 	}
 }
@@ -51,6 +51,7 @@ for recipe in [
 	"quark:custom_chest_5",
 	"quark:custom_chest_7",
 	"quark:custom_chest_9",
+	"quark:trapped_chest",
 	"quark:hopper",
 	"quark:dispenser",
 	"quark:repeater",
@@ -92,13 +93,16 @@ for recipe in [
 	"unidict:stickiron.*",
 	"unidict:blockcharcoal.*",
 	"unidict:ingotiron.*",
-	"chisel:charcoal_uncraft"
+	"chisel:charcoal_uncraft",
+	"minecolonies:cactusfence",
+	"minecolonies:cactusplate",
+	"minecolonies:cactusstick"
 ] as string[] {
 	Disabling.markForRemove(recipe);
 }
 
 val furnaceRemoveItems as IItemStack[] = [
-	<minecraft:leather>,/*<abyssalcraft:ingotnugget>,<abyssalcraft:ingotnugget:1>,<abyssalcraft:ingotnugget:2>,<abyssalcraft:ingotnugget:3>,*/<primal:diamond_plate>,<primal:obsidian_plate>,<natura:nether_glass>,<minecraft:brick>,<minecraft:coal:1>,<tconstruct:materials>
+	<minecraft:leather>,<primal:diamond_plate>,<primal:obsidian_plate>,<natura:nether_glass>,<minecraft:brick>,<minecraft:coal:1>,<tconstruct:materials>
 ];
 
 for item in furnaceRemoveItems {
@@ -110,5 +114,3 @@ mods.ltt.LootTable.removeItem("astralsorcery:chest_shrine", "astralsorcery:chest
 mods.ltt.LootTable.removeItem("iceandfire:fire_dragon_cave", "fire_dragon_cave", "minecraft:iron_ingot");
 mods.ltt.LootTable.removeItem("iceandfire:ice_dragon_cave", "ice_dragon_cave", "minecraft:iron_ingot");
 mods.ltt.LootTable.removeItem("minecraft:chests/village_blacksmith", "main", "minecraft:iron_ingot");
-
-Disabling.removeRecipes();

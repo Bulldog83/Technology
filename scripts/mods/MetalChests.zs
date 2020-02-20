@@ -109,5 +109,3 @@ for from, toUpgrade in upgradesList {
 		}
 	}
 }
-
-Disabling.removeRecipes();

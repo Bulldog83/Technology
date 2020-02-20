@@ -258,5 +258,3 @@ builderTanner.builder()
 	.addOutput(<minecraft:saddle>)
 	.addTool(art_tools.needle, 12)
 	.create();
-	
-Disabling.removeRecipes();

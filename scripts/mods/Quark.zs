@@ -34,5 +34,3 @@ builderBlacksmith.builder()
 	.addTool(art_tools.hammer, 8)
 	.create();
 Disabling.markForRemove("quark:iron_ladder");
-
-Disabling.removeRecipes();

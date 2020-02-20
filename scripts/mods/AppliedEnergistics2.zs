@@ -20,12 +20,23 @@ val light_panel = <ore:itemIlluminatedPanel>;
 val apli_interface = <appliedenergistics2:interface> | <appliedenergistics2:part:440>;
 val quartz_certus = <appliedenergistics2:material> | <appliedenergistics2:material:1> | <appliedenergistics2:material:10>;
 val quartz_glass = <appliedenergistics2:quartz_glass>;
+val electrotine = <ore:dustElectrotine>;
 
 val piston as IIngredient[string] = {
 	normal : <minecraft:piston>,
 	sticky : <minecraft:sticky_piston>
 };
 
+val ingot = metalOres.aluminum.ingot |
+			metalOres.alubrass.ingot |
+			metalOres.brass.ingot |
+			metalOres.bronze.ingot;
+			
+builderBlacksmith.builder()
+	.setShapeless([ingot])
+	.addOutput(<appliedenergistics2:part:120> * 3)
+	.addTool(<ore:itemQuartzKnife>, 2)
+	.create();
 
 engineerBuilder
 	.setCopy(Copy.byName("appliedenergistics2:network/parts/planes_annihilation_fluid_alt")
@@ -39,15 +50,15 @@ engineerBuilder
 	.create();
 engineerBuilder
 	.setCopy(Copy.byName("appliedenergistics2:network/parts/fluid_level_emitter")
-				 .replaceInput(<ore:dyeBlue>, dust_lapis))
+				 .replaceInput(<ore:dyeBlue>, electrotine))
 	.addTool(art_tools.driver, 6)
 	.create();
 
 engineerBuilder
 	.setShaped([
-		[null,dust_lapis,null],
+		[null,electrotine,null],
 		[piston.normal,apli_interface,piston.sticky],
-		[null,dust_lapis,null]
+		[null,electrotine,null]
 	])
 	.addOutput(<appliedenergistics2:part:221>)
 	.addTool(art_tools.driver, 10)
@@ -80,7 +91,7 @@ engineerBuilder
 engineerBuilder
 	.setShaped([
 		[null,<appliedenergistics2:part:280>,null],
-		[dust_lapis,light_panel,dust_lapis]
+		[electrotine,light_panel,electrotine]
 	])
 	.addOutput(<extracells:part.base:10>)
 	.addTool(art_tools.driver, 8)
@@ -125,19 +136,19 @@ val gas_component_1024k = <extracells:storage.component:16>;
 val gas_component_4096k = <extracells:storage.component:17>;
 	
 recipes.addShaped("fluid_storage_component_1k", fluid_component_1k, [
-	[dust_lapis,quartz_certus,dust_lapis],
+	[electrotine,quartz_certus,electrotine],
 	[quartz_certus,logic_proc,quartz_certus],
-	[dust_lapis,quartz_certus,dust_lapis]
+	[electrotine,quartz_certus,electrotine]
 ]);
 recipes.addShaped("fluid_storage_component_4k", fluid_component_4k, [
-	[dust_lapis,calc_proc,dust_lapis],
+	[electrotine,calc_proc,electrotine],
 	[fluid_component_1k,quartz_glass,fluid_component_1k],
-	[dust_lapis,fluid_component_1k,dust_lapis]
+	[electrotine,fluid_component_1k,electrotine]
 ]);
 recipes.addShaped("fluid_storage_component_16k", fluid_component_16k, [
-	[dust_lapis,eng_proc,dust_lapis],
+	[electrotine,eng_proc,electrotine],
 	[fluid_component_4k,quartz_glass,fluid_component_4k],
-	[dust_lapis,fluid_component_4k,dust_lapis]
+	[electrotine,fluid_component_4k,electrotine]
 ]);
 recipes.addShaped("fluid_storage_component_64k", fluid_component_64k, [
 	[dust_lapis,eng_proc,dust_lapis],
@@ -228,6 +239,7 @@ for item in [
 	<appliedenergistics2:controller>,
 	<appliedenergistics2:drive>,
 	<appliedenergistics2:chest>,
+	<appliedenergistics2:part:120>,
 	<extracells:part.base:10>,
 	<extracells:part.base:11>,
 	<extracells:part.base:13>,
@@ -274,5 +286,3 @@ for recipe in [
 ] as string[] {
 	Disabling.markForRemove(recipe);
 }
-
-Disabling.removeRecipes();

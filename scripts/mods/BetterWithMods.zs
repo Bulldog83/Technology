@@ -162,5 +162,3 @@ for i in 0 to 6 {
 }
 
 mods.betterwithmods.Saw.add(<minecraft:melon_block>, [<minecraft:melon> * 9]);
-
-Disabling.removeRecipes();

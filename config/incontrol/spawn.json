@@ -1,6 +1,6 @@
 [
 	{
-		"mob": ["mowziesmobs:barakoan_barakoana", "mowziesmobs:barakoana"],
+		"mob": ["mowziesmobs:barakoan_barakoana","mowziesmobs:barakoana"],
 		"biome": ["Oasis","Brushland","Outback","Prairie"],
 		"result": "allow"
 	},
@@ -11,32 +11,108 @@
 	},
 	{
 		"mob": "animalium:bear",
-		"biometype": ["DESERT","COLD","JUNGLE","WASTELAND","PLAINS","SWAMP"],
+		"biometype": ["DESERT","SNOWY","JUNGLE","WASTELAND","PLAINS","SWAMP"],
+		"result": "deny"
+	},
+	{
+		"mob": [
+			"thermalfoundation:blitz",
+			"thermalfoundation:blizz",
+			"thermalfoundation:basalz",
+			"iceandfire:if_troll"
+		],
+		"minlight": 8,
 		"result": "deny"
 	},
 	{
 		"mob": "thermalfoundation:blitz",
-		"biome": ["Wasteland","Steppe","Tundra","Grassland","Lush Desert","Outback","Prairie"],
-		"maxlight": 7,
+		"biometype": ["COLD","SNOWY"],
+		"result": "deny"
+	},
+	{
+		"mob": ["thermalfoundation:basalz","thermalfoundation:blitz","thermalfoundation:blizz"],
+		"biome": ["Highland"],
+		"result": "deny"
+	},
+	{
+		"mob": "thermalfoundation:blitz",
+		"biometype": ["DESERT","WASTELAND","PLAINS","MESA","SAVANNA"],
 		"result": "allow"
 	},
 	{
 		"mob": "thermalfoundation:blizz",
-		"biome": ["Alps","AlpsFoothills","Snowy Coniferous Forest","Cold Desert","Snowy Forest","Glacier"],
-		"maxlight": 7,
+		"biometype": ["COLD","SNOWY"],
+		"result": "allow"
+	},
+	{
+		"mob": "thermalfoundation:blizz",
+		"biometype": ["MOUNTAIN"],
+		"minheight": 90,
 		"result": "allow"
 	},
 	{
 		"mob": "thermalfoundation:basalz",
-		"biome": ["Wasteland","Alps","Crag","Mountain","Overgrown Cliffs","Shield","Highland"],
-		"maxlight": 7,
+		"biometype": ["MOUNTAIN"],
 		"result": "allow"
 	},
 	{
 		"mob": "thermalfoundation:basalz",
-		"biome": ["Chaparral"],
+		"biome": ["Shield","Chaparral"],
 		"block": "minecraft:stone",
-		"maxlight": 7,
 		"result": "allow"
+	},
+	{
+		"mob": "iceandfire:if_troll",
+		"biometype": ["FOREST","SNOWY"],
+		"maxheight": 50,
+		"seesky": false,
+		"result": "allow"
+	},
+	{
+		"mob": "iceandfire:if_troll",
+		"biometype": ["MOUNTAIN"],
+		"maxheight": 70,
+		"seesky": false,
+		"result": "allow"
+	},
+	{
+		"mob": ["matteroverdrive:rogue_android","matteroverdrive:ranged_rogue_android"],
+		"seesky": false,
+		"minlight": 8,
+		"result": "deny"
+	},
+	{
+		"mob": ["matteroverdrive:rogue_android","matteroverdrive:ranged_rogue_android"],
+		"incity": true,
+		"minheight": 53,
+		"result": "allow"
+	},
+	{
+		"mob": ["matteroverdrive:rogue_android","matteroverdrive:ranged_rogue_android"],
+		"biometype": ["MOUNTAIN"],
+		"incity": true,
+		"minheight": 60,
+		"result": "allow"
+	},
+	{
+		"mob": ["animalium:wild_dog","primal:canis_campestris"],
+		"biometype": ["WASTELAND","PLAINS","SAVANNA","FOREST"],
+		"seesky": true,
+		"result": "allow"
+	},
+	{
+		"mob": ["jaff:cod","jaff:salmon","jaff:clownfish","jaff:pufferfish"],
+		"seesky": false,
+		"result": "deny"
+	},
+	{
+		"mob": [
+			"matteroverdrive:rogue_android",
+			"matteroverdrive:ranged_rogue_android",
+			"animalium:wild_dog",
+			"primal:canis_campestris"
+		],
+		"result": "deny"
 	}
+	
 ]

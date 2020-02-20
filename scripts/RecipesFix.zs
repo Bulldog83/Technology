@@ -305,5 +305,3 @@ basicBuilder
 	.setFluid(<liquid:water> * 50)
 	.create();
 Disabling.markForRemove(clay_brick);
-
-Disabling.removeRecipes();

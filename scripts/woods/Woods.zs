@@ -2,6 +2,7 @@
 #priority 1000
 
 import crafttweaker.item.IItemStack;
+import mods.contenttweaker.BlockState;
 
 global plankLogs as IItemStack[][IItemStack]  = {
 	<minecraft:planks>: [
@@ -158,13 +159,7 @@ global plankLogs as IItemStack[][IItemStack]  = {
 	],
 	<terraqueous:planks:7>: [
 		<terraqueous:trunk2:2>
-	],/*
-	<abyssalcraft:dltplank>: [
-		<abyssalcraft:dltlog>
 	],
-	<abyssalcraft:dreadplanks>: [
-		<abyssalcraft:dreadlog>
-	],*/
 	<thaumcraft:plank_greatwood>: [
 		<thaumcraft:log_greatwood>
 	],
@@ -585,17 +580,7 @@ global woodPlanksItems as IItemStack[string][IItemStack]  = {
 		"boat" : <biomesoplenty:boat_eucalyptus>,
 		"bookshelf" : <natura:overworld_bookshelves:5>,
 		"workbench" : <natura:overworld_workbenches:5>
-	},/*
-	<abyssalcraft:dltplank> : {
-		"slab" : <abyssalcraft:dltslab1>,
-		"stairs" : <abyssalcraft:dltstairs>,
-		"fence" : <abyssalcraft:dltfence>,
-		"pressure_plate" : <abyssalcraft:dltpplate>,
-		"button" : <abyssalcraft:dltbutton>
 	},
-	<abyssalcraft:dreadplanks> : {
-		"fence" : <abyssalcraft:drtfence>
-	},*/
 	<thaumcraft:plank_greatwood> : {
 		"slab" : <thaumcraft:slab_greatwood>,
 		"stairs" : <thaumcraft:stairs_greatwood>

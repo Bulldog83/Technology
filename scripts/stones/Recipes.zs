@@ -259,5 +259,3 @@ masonBuilder
 	.addOutput(<primal:soul_stone> * 2)
 	.addTool(art_tools.trowel, 1)
 	.create();
-	
-Disabling.removeRecipes();

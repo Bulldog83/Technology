@@ -64,5 +64,3 @@ basicBuilder
 	.addOutput(cactus_trapdoor * 2)
 	.addTool(art_tools.framing_hammer, 2)
 	.create();
-	
-Disabling.removeRecipes();

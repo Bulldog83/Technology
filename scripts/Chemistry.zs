@@ -15,12 +15,13 @@ builderChemist.convertRecipe("thermalfoundation:fertilizer_1", art_tools.beaker,
 builderChemist.convertRecipe("thermalfoundation:fertilizer_2", art_tools.beaker, 5);
 builderChemist.convertRecipe("thermalfoundation:fertilizer_3", art_tools.beaker, 7);
 builderChemist.convertRecipe("thermalfoundation:material_4", art_tools.beaker, 2);
-
+/*
+builderChemist.convertRecipe("enderio:machine_dye", art_tools.burner, 3);
+builderChemist.convertRecipe("enderio:soul_machine_dye", art_tools.burner, 4);
+builderChemist.convertRecipe("enderio:enhanced_machine_dye", art_tools.burner, 6);
+builderChemist.convertRecipe("enderio:photovoltaic_powder", art_tools.burner, 2);
+*/
 builderChemist.convertRecipe(<botania:fertilizer>, art_tools.beaker, 5);
-builderChemist.convertRecipe(<enderio:item_material:51>, art_tools.burner, 3);
-builderChemist.convertRecipe(<enderio:item_material:52>, art_tools.burner, 4);
-builderChemist.convertRecipe(<enderio:item_material:38>, art_tools.burner, 2);
-builderChemist.convertRecipe(<enderio:item_material:67>, art_tools.burner, 7);
 
 val dust_platinum = metalOres.platinum.dust;
 val dust_electrum = metalOres.electrum.dust;
@@ -88,5 +89,3 @@ for item in [
 ] as IItemStack[] {
 	Disabling.markForRemove(item);
 }
-
-Disabling.removeRecipes();

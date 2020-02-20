@@ -16,22 +16,21 @@ val dragonArmorRecipes as IItemStack[IIngredient] = {
 };
 
 val pad = <ore:leatherTroll>;
-val pin = ore_pin_iron * 4;
 
 for material, item in dragonArmorRecipes {
 	for i in 0 to 4 {
 		Disabling.markForRemove(item.definition.makeStack(i));
 	}
 	
-	val plate = material * 3;
 	blacksmithBuilder
 		.setShaped([
-			[null,null,null,plate,plate],
-			[null,null,plate,pad,pin],
-			[null,plate,pad,null,plate],
-			[plate,pin,pad,pad,plate],
-			[null,plate,plate,plate,null]
+			[null,null,null,material,material],
+			[null,null,material,pad,ore_pin_iron],
+			[null,material,pad,null,material],
+			[material,ore_pin_iron,pad,pad,material],
+			[null,material,material,material,null]
 		])
+		.setSecondaryIngredients([material * 20, ore_pin_iron * 6])
 		.addOutput(item)
 		.addTool(art_tools.hammer, 115)
 		.addTool(art_tools.pliers, 75)
@@ -39,11 +38,12 @@ for material, item in dragonArmorRecipes {
 		.create();
 	blacksmithBuilder
 		.setShaped([
-			[plate,plate,plate,plate,plate],
-			[plate,plate,pin,pad,pad],
-			[null,plate,plate,pin,pad],
-			[null,null,plate,plate,pin]
+			[material,material,material,material,material],
+			[material,material,ore_pin_iron,pad,pad],
+			[null,material,material,ore_pin_iron,pad],
+			[null,null,material,material,ore_pin_iron]
 		])
+		.setSecondaryIngredients([material * 22, ore_pin_iron * 9])
 		.addOutput(item.definition.makeStack(1))
 		.addTool(art_tools.hammer, 95)
 		.addTool(art_tools.pliers, 50)
@@ -51,12 +51,13 @@ for material, item in dragonArmorRecipes {
 		.create();
 	blacksmithBuilder
 		.setShaped([
-			[plate,plate,plate,plate,plate],
-			[plate,pad,plate,pad,plate],
-			[pin,plate,pad,plate,pin],
-			[plate,pin,pad,pin,plate],
-			[plate,pin,pad,pin,plate]
+			[material,material,material,material,material],
+			[material,pad,material,pad,material],
+			[ore_pin_iron,material,pad,material,ore_pin_iron],
+			[material,ore_pin_iron,pad,ore_pin_iron,material],
+			[material,ore_pin_iron,pad,ore_pin_iron,material]
 		])
+		.setSecondaryIngredients([material * 28, ore_pin_iron * 18])
 		.addOutput(item.definition.makeStack(2))
 		.addTool(art_tools.hammer, 175)
 		.addTool(art_tools.pliers, 140)
@@ -64,11 +65,12 @@ for material, item in dragonArmorRecipes {
 		.create();
 	blacksmithBuilder
 		.setShaped([
-			[plate,null,null,null,null],
-			[pad,pin,plate,null,null],
-			[plate,pad,pin,plate,null],
-			[plate,plate,pad,pin,plate]
+			[material,null,null,null,null],
+			[pad,ore_pin_iron,material,null,null],
+			[material,pad,ore_pin_iron,material,null],
+			[material,material,pad,ore_pin_iron,material]
 		])
+		.setSecondaryIngredients([material * 14, ore_pin_iron * 9])
 		.addOutput(item.definition.makeStack(3))
 		.addTool(art_tools.hammer, 110)
 		.addTool(art_tools.pliers, 75)
@@ -105,5 +107,3 @@ for i in 0 to 6 {
 		.create();
 	Disabling.markForRemove(podium);
 }
-
-Disabling.removeRecipes();

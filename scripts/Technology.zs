@@ -37,6 +37,7 @@ val ender_capacitor_2 = <enderio:item_basic_capacitor:1>;
 val ender_capacitor_3 = <enderio:item_basic_capacitor:2>;
 val rubber = <ore:itemRubber>;
 val plate_redstone = <techreborn:plates:4>;
+val electrotine = <ore:dustElectrotine>;
 
 mods.immersiveengineering.MetalPress.addRecipe(<techreborn:plates:10>, <ore:gemLapis>, <immersiveengineering:mold>, 2400);
 mods.techreborn.compressor.addRecipe(<techreborn:plates:10>, <ore:gemLapis>, 300, 4);
@@ -194,9 +195,9 @@ for recipe, dmg in convertNameRecipes {
 val convertItemRecipes as int[IItemStack] = {
 	<techreborn:part:26> : 12,
 	<techreborn:part:28> : 16,
-	<thermalexpansion:frame> : 12,
-	<thermalexpansion:frame:64> : 12,
-	<thermalexpansion:frame:128> : 12,
+	<thermalexpansion:frame> : 6,
+	<thermalexpansion:frame:64> : 6,
+	<thermalexpansion:frame:128> : 6,
 	<appliedenergistics2:part:280> : 5,
 	<appliedenergistics2:part:300> : 20,
 	<appliedenergistics2:part:320> : 20,
@@ -329,8 +330,8 @@ blacksmithBuilder
 builderBlacksmith.convertRecipe(<techreborn:machine_frame:1>, art_tools.hammer, 18);
 builderBlacksmith.convertRecipe(<techreborn:machine_frame:2>, art_tools.hammer, 24);
 
-builderBlacksmith.convertRecipe("thermalfoundation:material_86", art_tools.hammer, 12);
-builderBlacksmith.convertRecipe("thermalfoundation:material_87", art_tools.hammer, 12);
+builderBlacksmith.convertRecipe(<thermalfoundation:material:656>, art_tools.hammer, 12);
+builderBlacksmith.convertRecipe(<thermalfoundation:material:657>, art_tools.hammer, 12);
 builderBlacksmith.convertRecipe("thermalfoundation:wrench", art_tools.hammer, 2);
 
 //CoFH Mods
@@ -368,38 +369,37 @@ engineerBuilder
 
 val copper_wire = <ore:wireCopper>;	
 engineerBuilder
-	.setCopy(Copy.byName("thermalfoundation:material_81")
-				 .replaceShapedInput(0, 0, copper_wire)
-				 .replaceShapedInput(0, 1, copper_wire)
-				 .replaceShapedInput(0, 2, copper_wire)
-				 .replaceShapedInput(2, 0, copper_wire)
-				 .replaceShapedInput(2, 1, copper_wire)
-				 .replaceShapedInput(2, 2, copper_wire))
-	.addTool(art_tools.driver, 12)
+	.setShaped([
+		[ore_redstone,electrotine,ore_redstone],
+		[copper_wire,ore_ingot_iron,copper_wire],
+		[ore_redstone,electrotine,ore_redstone]
+	])
+	.addOutput(<thermalfoundation:material:512>)
+	.addTool(art_tools.driver, 8)
 	.create();	
 engineerBuilder
-	.setCopy(Copy.byName("thermalfoundation:material_82")
+	.setCopy(Copy.byOutput([<thermalfoundation:material:513>])
 				 .replaceShapedInput(0, 1, copper_wire)
 				 .replaceShapedInput(1, 0, copper_wire)
 				 .replaceShapedInput(1, 2, copper_wire)
 				 .replaceShapedInput(2, 1, copper_wire))
-	.addTool(art_tools.driver, 10)
+	.addTool(art_tools.driver, 6)
 	.create();	
 engineerBuilder
-	.setCopy(Copy.byName("thermalfoundation:material_83")
+	.setCopy(Copy.byOutput([<thermalfoundation:material:514>])
 				 .replaceShapedInput(0, 1, copper_wire)
 				 .replaceShapedInput(1, 0, copper_wire)
 				 .replaceShapedInput(1, 2, copper_wire)
 				 .replaceShapedInput(2, 1, copper_wire))
-	.addTool(art_tools.driver, 10)
+	.addTool(art_tools.driver, 6)
 	.create();	
 engineerBuilder
-	.setCopy(Copy.byName("thermalfoundation:material_84")
+	.setCopy(Copy.byOutput([<thermalfoundation:material:515>])
 				 .replaceShapedInput(0, 1, copper_wire)
 				 .replaceShapedInput(1, 0, copper_wire)
 				 .replaceShapedInput(1, 2, copper_wire)
 				 .replaceShapedInput(2, 1, copper_wire))
-	.addTool(art_tools.driver, 10)
+	.addTool(art_tools.driver, 6)
 	.create();	
 engineerBuilder
 	.setCopy(Copy.byName("techreborn:alarm")
@@ -546,13 +546,13 @@ engineerBuilder
 	.create();
 engineerBuilder
 	.setCopy(Copy.byName("appliedenergistics2:network/parts/export_bus_fluid")
-				 .replaceInput(<minecraft:iron_ingot>, dust_lapis)
+				 .replaceInput(<minecraft:iron_ingot>, electrotine)
 				 .replaceInput(<ore:dyeBlue>, circuit_basic))
 	.addTool(art_tools.driver, 14)
 	.create();
 engineerBuilder
 	.setCopy(Copy.byName("appliedenergistics2:network/parts/import_bus_fluid")
-				 .replaceInput(<minecraft:iron_ingot>, dust_lapis)
+				 .replaceInput(<minecraft:iron_ingot>, electrotine)
 				 .replaceInput(<ore:dyeBlue>, circuit_basic))
 	.addTool(art_tools.driver, 14)
 	.create();
@@ -984,6 +984,10 @@ for item in [
 	<solarflux:solar_panel_6>,
 	<solarflux:solar_panel_7>,
 	<solarflux:solar_panel_8>,
+	<thermalfoundation:material:512>,
+	<thermalfoundation:material:513>,
+	<thermalfoundation:material:514>,
+	<thermalfoundation:material:515>,
 	<thermalfoundation:material:640>,
 	<thermalfoundation:upgrade>,
 	<thermalfoundation:upgrade:1>,
@@ -1031,10 +1035,6 @@ for recipe in [
 	"matteroverdrive:integration_matrix",
 	"matteroverdrive:spacetime_equalizer",
 	"matteroverdrive:gravitational_stabilizer",
-	"thermalfoundation:material_81",
-	"thermalfoundation:material_82",
-	"thermalfoundation:material_83",
-	"thermalfoundation:material_84",
 	"mekanism:teleportationcore",
 	"techreborn:alarm",
 	"techreborn:lamp_incandescent",
@@ -1043,5 +1043,3 @@ for recipe in [
 ] as string[] {
 	Disabling.markForRemove(recipe);
 }
-
-Disabling.removeRecipes();

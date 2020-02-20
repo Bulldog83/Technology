@@ -325,5 +325,3 @@ val heavyPlates as IItemStack[string] = {
 for metal, plate in heavyPlates {
 	mods.immersiveengineering.MetalPress.addRecipe(plate, metalOres[metal].ingot, <immersiveengineering:mold>, 4000, 2);
 }
-
-Disabling.removeRecipes();

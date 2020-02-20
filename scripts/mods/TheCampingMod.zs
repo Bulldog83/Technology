@@ -76,5 +76,3 @@ val furArmor as int[string] = {
 for part, dmg in furArmor {
 	builderTanner.convertRecipe(part, art_tools.needle, dmg);
 }
-
-Disabling.removeRecipes();

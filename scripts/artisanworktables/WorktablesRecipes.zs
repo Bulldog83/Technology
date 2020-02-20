@@ -86,7 +86,7 @@ function workstationUpgrade(type as string) {
 	recipes.addShaped("artisan_" ~ type ~ "_workstation_upgrade", workstation, [
 		[upgrade_item,art_tables[type].worktable,upgrade_item],
 		[upgrade_item,<ore:barrelWood>,upgrade_item],
-		[<ore:plankWood>,<ore:blockCrudeIron>,<ore:plankWood>]
+		[<ore:plankWood>,<ore:blockCrudeIron>|<ore:blockSteel>,<ore:plankWood>]
 	]);	
 }
 function workshopUpgrade(type as string) {
@@ -101,55 +101,57 @@ function workshopUpgrade(type as string) {
 	]);
 }
 
+val bucket = <ore:bucket>.noReturn();
+
 val worktableRecipe as IIngredient[][][string] = {
 	"carpenter" : [
 		[<ore:plankWood>,<ore:logWood>,<ore:plankWood>],
-		[<ore:plankWood>,<ore:bucket>,<ore:plankWood>],
+		[<ore:plankWood>,bucket,<ore:plankWood>],
 		[<ore:logWood>,<ore:plankWood>,<ore:logWood>]
 	],
 	"blacksmith" : [
 		[<ore:ingotCrudeIron>,<ore:ingotIron>,<ore:ingotCrudeIron>],
-		[<ore:ingotCrudeIron>,<ore:bucket>,<ore:ingotCrudeIron>],
+		[<ore:ingotCrudeIron>,bucket,<ore:ingotCrudeIron>],
 		[<ore:logWood>,<ore:plankWood>,<ore:logWood>]
 	],
 	"basic" : [
 		[<ore:plankWood>,<ore:crafterWood>,<ore:plankWood>],
-		[<ore:plankWood>,<ore:bucket>,<ore:plankWood>],
+		[<ore:plankWood>,bucket,<ore:plankWood>],
 		[<ore:logWood>,<ore:plankWood>,<ore:logWood>]
 	],
 	"engineer" : [
 		[<ore:plateIron>,<ore:plateCopper>,<ore:plateIron>],
-		[<ore:gearWood>,<ore:bucket>,<ore:gearWood>],
+		[<ore:gearWood>,bucket,<ore:gearWood>],
 		[<ore:logWood>,<ore:plankWood>,<ore:logWood>]
 	],
 	"mage" : [
 		[<ore:gemLapis>,<ore:obsidian>,<ore:gemLapis>],
-		[<ore:obsidian>,<ore:bucket>,<ore:obsidian>],
+		[<ore:obsidian>,bucket,<ore:obsidian>],
 		[<ore:logWood>,<ore:plankWood>,<ore:logWood>]
 	],
 	"chemist" : [
 		[<ore:blockGlassHardened>,<minecraft:brewing_stand>,<ore:blockGlassHardened>],
-		[<ore:plateIron>,<ore:bucket>,<ore:plateIron>],
+		[<ore:plateIron>,bucket,<ore:plateIron>],
 		[<ore:logWood>,<ore:plankWood>,<ore:logWood>]
 	],
 	"chef" : [
 		[<ore:ingotIron>,<ore:plankWood>,<ore:ingotIron>],
-		[<ore:plankWood>,<ore:bucket>,<ore:plankWood>],
+		[<ore:plankWood>,bucket,<ore:plankWood>],
 		[<ore:logWood>,<ore:plankWood>,<ore:logWood>]
 	],
 	"tanner" : [
 		[<minecraft:leather>,<minecraft:leather>,<minecraft:leather>],
-		[<ore:plankWood>,<ore:bucket>,<ore:plankWood>],
+		[<ore:plankWood>,bucket,<ore:plankWood>],
 		[<ore:logWood>,<ore:plankWood>,<ore:logWood>]
 	],
 	"designer" : [
 		[<ore:dyeBlue>,<ore:paper>,<ore:dyeBlue>],
-		[<ore:plankWood>,<ore:bucket>,<ore:plankWood>],
+		[<ore:plankWood>,bucket,<ore:plankWood>],
 		[<ore:logWood>,<ore:plankWood>,<ore:logWood>]
 	],
 	"mason" : [
 		[<minecraft:brick>,<minecraft:stone_slab>,<minecraft:brick>],
-		[<minecraft:brick>,<ore:bucket>,<minecraft:brick>],
+		[<minecraft:brick>,bucket,<minecraft:brick>],
 		[<ore:logWood>,<ore:plankWood>,<ore:logWood>]
 	]
 };

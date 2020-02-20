@@ -301,5 +301,3 @@ Disabling.markForRemove("immersiveengineering:conveyors/conveyor_basic_rubber");
 Disabling.markForRemove(<immersiveengineering:stone_decoration:5>);
 Disabling.markForRemove(<immersiveengineering:stone_decoration:10>);
 Disabling.markForRemove(<immersivepetroleum:stone_decoration>);
-
-Disabling.removeRecipes();

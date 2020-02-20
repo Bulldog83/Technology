@@ -358,5 +358,3 @@ for item in [
 ] as IItemStack[] {
 	Disabling.markForRemove(item);
 }
-
-Disabling.removeRecipes();

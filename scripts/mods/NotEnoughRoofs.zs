@@ -108,5 +108,3 @@ for recipe, roof in roofsBrick {
 		.create();
 	Disabling.markForRemove(roof);
 }
-
-Disabling.removeRecipes();

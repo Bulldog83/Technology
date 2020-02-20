@@ -342,5 +342,3 @@ for log, quarkLog in quarkLogs {
 	Disabling.markForRemove(quarkLog);
 	recipes.addShaped(strToName(quarkLog.displayName), quarkLog * 4, [[log,log],[log,log]]);
 }
-
-Disabling.removeRecipes();

@@ -1371,5 +1371,3 @@ val armorForProtection as IItemStack[] = [
 for item in armorForProtection {
 	addRadiationShield(item);
 }
-
-Disabling.removeRecipes();

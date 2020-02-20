@@ -195,5 +195,3 @@ blacksmithBuilder
 	.addTool(art_tools.hammer, 125)
 	.setMinimumTier(2)
 	.create();
-	
-Disabling.removeRecipes();

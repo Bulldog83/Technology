@@ -356,5 +356,3 @@ for group, blocks in chiselBlockGroups {
 		}
 	}
 }
-
-Disabling.removeRecipes();

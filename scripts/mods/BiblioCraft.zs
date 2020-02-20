@@ -107,5 +107,3 @@ for color in colors {
 		builderEngineer.convertRecipe(recipe, art_tools.driver, dmg);
 	}
 }
-
-Disabling.removeRecipes();

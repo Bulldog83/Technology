@@ -30,5 +30,3 @@ for recipe in copyRecipes {
 		.create();
 	Disabling.markForRemove(recipe);
 }
-
-Disabling.removeRecipes();

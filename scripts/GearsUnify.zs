@@ -15,7 +15,7 @@ for ore_gear, gear in gears {
 	ore_gear.add(gear);
 	for item in ore_gear.items {
 		if(!item.matches(gear)) {
-			Disabling.markForRemoveInJEI(item, true);
+			Disabling.markForRemove(item, true);
 		}
 	}
 }
@@ -26,7 +26,7 @@ recipes.addShaped("recipes_gear_wood", <enderio:item_material:9> * 2, [
 	[ore_stick,ore_plank,ore_stick]
 ]);
 
-val corner_wood = mods.betterwithmods.MiniBlocks.getMiniBlock("corner", ore_plank);
+var corner_wood = mods.betterwithmods.MiniBlocks.getMiniBlock("corner", ore_plank);
 recipes.addShaped("recipes_gear_stone", <enderio:item_material:10> * 2, [
 	[corner_wood,ore_cobblestone,corner_wood],
 	[ore_cobblestone,null,ore_cobblestone],
@@ -38,5 +38,3 @@ mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <ore:gearSton
 mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <ore:gearStone>, <liquid:alubrass>, 144, true, 40);
 
 mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:10>);
-
-Disabling.removeRecipes();

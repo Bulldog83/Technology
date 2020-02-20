@@ -1,0 +1,10 @@
+{
+	"repositoryRoot": "mods/server",
+	"modRef": [
+		"utility:bettermobgriefinggamerule:1.12.2-7.0.1",
+		"utility:Chunk+Pregenerator+V1.12:1.9",
+		"utility:Morpheus:1.12:3.3.2",
+		"utility:NetherPortalFix_1.12.1:5.3.17",
+		"utility:unloader:1.2.0"
+	]
+}

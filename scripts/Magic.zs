@@ -167,5 +167,3 @@ builder
 	.addTool(art_tools.athame, 13)
 	.create();
 Disabling.markForRemove("bloodmagic:soul_forge");
-
-Disabling.removeRecipes();

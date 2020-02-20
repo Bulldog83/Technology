@@ -41,5 +41,3 @@ val otherRecipes as string[] = [
 for recipe in otherRecipes {
 	builderCarpenter.convertRecipe(recipe, art_tools.framing_hammer, 25);
 }
-
-Disabling.removeRecipes();

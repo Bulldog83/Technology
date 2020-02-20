@@ -8,23 +8,25 @@ import mods.jei.JEI;
 
 zenClass CDisabling {
 	
-	var itemRecipes as IItemStack[];
-	var nameRecipes as string[];
+	var removedItems as IItemStack[];
+	var removedNames as string[];
 	
 	zenConstructor() {
-		itemRecipes = [];
-		nameRecipes = [];
+		removedItems = [];
+		removedNames = [];
 	}
 	
 	function markForRemove(item as IItemStack) {
-		var clear_item = item.hasTag ? item.definition.makeStack() : item;
+		val clear_item = item.hasTag ? item.definition.makeStack() : item;
 		if(!isMarked(clear_item)) {
-			itemRecipes += clear_item;
+			removedItems += clear_item;
+			recipes.remove(clear_item);
 		}
 	}
 	function markForRemove(name as string) {
 		if(!isMarked(name)) {
-			nameRecipes += name;
+			removedNames += name;
+			recipes.removeByRegex(name);
 		}
 	}
 	function markForRemove(ore as IOreDictEntry) {
@@ -32,26 +34,15 @@ zenClass CDisabling {
 			markForRemove(item);
 		}
 	}
-	function markForRemoveInJEI(item as IItemStack, removeInJEI as bool) {
-		if(!isMarked(item)) {
-			itemRecipes += item;
-		}		
-		if(removeInJEI) JEI.hide(item);
+	function markForRemove(item as IItemStack, jei_hide as bool) {
+		markForRemove(item);		
+		if(jei_hide) JEI.hide(item);
 	}
 	
-	function isMarked(item as IItemStack) as bool {
-		return itemRecipes in item;
-	}
 	function isMarked(name as string) as bool {
-		return nameRecipes in name;
+		return removedNames in name;
 	}
-	
-	function removeRecipes() {
-		for item in itemRecipes {
-			recipes.remove(item);
-		}
-		for name in nameRecipes {
-			recipes.removeByRegex(name);
-		}
+	function isMarked(item as IItemStack) as bool {
+		return removedItems in item;
 	}
 }

@@ -145,5 +145,3 @@ for food in foodsHandmade {
 	
 	Disabling.markForRemove(food);
 }
-
-Disabling.removeRecipes();
